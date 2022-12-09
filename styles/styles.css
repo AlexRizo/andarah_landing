@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.br {
+    display: none;
+}
+
+.header {
+    background-image: url(/assets/portada.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 100vw;
+    height: 513px;
+}
+
+.title {
+    width: 295px;
+    height: 150px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sub-title{
+    background: white;
+    width: 450px;
+    height: 122px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #103F24;
+    color: white;
+    border-radius: 20px;
+    line-height: 32px;
+    margin-top: 275px;
+}
+
+.sub-title h1 {
+    font-size: 27.5px;
+    letter-spacing: 3px;
+}
+
+.zona-bronce {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 27.5px;
+}
+
+.decoration-subtitle {
+    position: absolute;
+    margin-top: 13px;
+}
+
+.decoration {
+    position: absolute;
+    margin: 8px 0 0 -27px;
+}
+
+.content {
+    margin-top: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.li {
+   width: 179px;
+}
+
+.container {
+    width: 691px;
+    color: #103F24;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+}
+
+.menu-2 {
+    margin: 0 100px;
+}
+
+.cards {
+    display: flex;
+    margin-top: 20px;
+}
+
+.card-2 {
+    margin: 0 20px;
+}
+
+.footer {
+    background: #103F24;
+    height: 101px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer-section {
+    display: flex;
+}
+
+.footer-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.ubicacion, .redes {
+    margin: 0 25px;
+}
+
+.ubicacion img, .redes img, .whatsapp img {
+    margin-right: 10px;
+}
+
+.inmobiliaria {
+    margin-right: 25px;
+}
+
+.inmobiliaria img {
+    z-index: 2;
+}
+
+.whatsapp {
+    margin-left: 25px;
+    font-size: 25.6px !important;
+    font-weight: 800 !important;
+}
+
+.whatsapp a, .ubicacion a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bg{
+    position: absolute;
+    height: 101px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.427);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .br {
+        display: initial;
+    }
+    
+    .content {
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .menu-1 {
+        width: 192.94px;
+    }
+    
+    .menu-2 {
+        margin: initial;
+        width: 192.94px;
+    }
+
+    .menu-3 {
+        width: 192.94px;
+    }
+
+    .cards {
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+    
+    .card-2 {
+        margin: 10px 0;
+    }
+
+    .ca img {
+        width: max-content;
+    }
+
+    .ubicacion, .redes {
+        margin: 0 4px;
+    }
+    
+    .ubicacion img, .redes img, .whatsapp img {
+        margin-right: 4px;
+    }
+    
+    .inmobiliaria {
+        margin-right: 4px;
+    }
+
+    .whatsapp {
+        margin-left: 4px;
+        font-size: 14px !important;
+    }
+
+    .bg{
+        width: 120px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        height: auto;
+    }
+
+    .title {
+        width: calc(295px - 100px);
+        height: calc(150px - 60px);
+    }
+
+    .title img {
+        width: 150px;
+    }
+
+    .sub-title{
+        width: 90vw;
+        margin-top: 120px;
+    }
+
+    .cards {
+        margin-top: 50px;
+    }
+
+    .facebook {
+        margin-left: 5px;
+    }
+
+    .ubicacion, .redes {
+        margin: 0 5px;
+    }
+    
+    .redes img, .whatsapp img {
+        margin-right: 20px;
+    }
+    
+    .inmobiliaria {
+        margin-right: 25px;
+    }
+
+    .whatsapp {
+        margin-left: 0px;
+    }
+
+    .bg{
+        width: 120px;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .whatsapp a {
+        display: initial;
+    }
+}
